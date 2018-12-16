@@ -18,7 +18,7 @@ class FileCacheParticipantRepository implements ParticipantRepositoryInterface
 
         foreach($participants as $key => $participant)
         {
-            if($participant->eventId === $eventid)
+            if($participant->eventId === $eventId)
             {
                 $resultParticipants[] = $participant;
             }

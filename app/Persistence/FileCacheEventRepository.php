@@ -21,7 +21,7 @@ class FileCacheEventRepository implements EventRepositoryInterface
 
         foreach($events as $key => $event)
         {
-            if($event->id === $eventid)
+            if($event->id === $eventId)
             {
                 return $event;
             }
