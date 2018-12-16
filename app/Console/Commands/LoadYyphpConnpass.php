@@ -52,6 +52,7 @@ class LoadYyphpConnpass extends Command
      */
     public function handle()
     {
+        $this->info('Begin YYPHP load from Connpass');
         $html = file_get_contents("https://yyphp.connpass.com/");
         $events = [];
 
@@ -181,5 +182,7 @@ class LoadYyphpConnpass extends Command
         //永続化
         $this->eventRepo->saveEvents($events);
         $this->participantRepo->saveParticipants($participants);
+
+        $this->info('End YYPHP load from Connpass');
     }
 }
