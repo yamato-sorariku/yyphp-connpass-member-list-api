@@ -13,10 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
 Route::namespace('Apis')->name('api.')->group(function () {
     Route::get('events', 'EventController@events')->name('events');
     Route::get('events/{event_id}', 'EventController@eventDetail')->name('eventDetail');
