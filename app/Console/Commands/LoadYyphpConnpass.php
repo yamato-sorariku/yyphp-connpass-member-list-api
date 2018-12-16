@@ -7,6 +7,8 @@ use phpQuery;
 use Illuminate\Console\Command;
 use App\Domain\Model\Event;
 use App\Domain\Model\Participant;
+use App\Domain\Model\EventRepositoryInterface;
+use App\Domain\Model\ParticipantRepositoryInterface;
 
 class LoadYyphpConnpass extends Command
 {
@@ -29,10 +31,19 @@ class LoadYyphpConnpass extends Command
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(
+        EventRepositoryInterface $eventRepositoryInterface,
+        ParticipantRepositoryInterface $participantRepositoryInterface
+    )
     {
         parent::__construct();
+
+        $this->eventRepo = $eventRepositoryInterface;
+        $this->participantRepo = $participantRepositoryInterface;
     }
+
+    protected $eventRepo;
+    protected $participantRepo;
 
     /**
      * Execute the console command.
@@ -169,5 +180,9 @@ class LoadYyphpConnpass extends Command
                 }
             }
         }
+
+        //永続化
+        $this->eventRepo->saveEvents($events);
+        $this->participantRepo->saveParticipants($participants);
     }
 }

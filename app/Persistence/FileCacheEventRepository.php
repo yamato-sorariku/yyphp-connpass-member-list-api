@@ -1,7 +1,8 @@
 <?php 
 namespace App\Persistence;
 
-use  App\Domain\Model\EventRepositoryInterface;
+use Illuminate\Support\Facades\Cache;
+use App\Domain\Model\EventRepositoryInterface;
 use App\Domain\Model\Event;
 
 class FileCacheEventRepository implements EventRepositoryInterface
@@ -47,5 +48,10 @@ class FileCacheEventRepository implements EventRepositoryInterface
         $event1->participants = 6;
 
         return $event1;
+    }
+
+    public function saveEvents($events)
+    {
+        Cache::forever('events', $events);
     }
 }

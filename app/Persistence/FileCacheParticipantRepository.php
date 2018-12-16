@@ -1,7 +1,8 @@
 <?php 
 namespace App\Persistence;
 
-use  App\Domain\Model\ParticipantRepositoryInterface;
+use Illuminate\Support\Facades\Cache;
+use App\Domain\Model\ParticipantRepositoryInterface;
 use App\Domain\Model\Participant;
 
 class FileCacheParticipantRepository implements ParticipantRepositoryInterface
@@ -29,5 +30,10 @@ class FileCacheParticipantRepository implements ParticipantRepositoryInterface
             $participant2,
             $participant3
         ];
+    }
+
+    public function saveParticipants($participants)
+    {
+        Cache::forever('participants', $participants);
     }
 }
