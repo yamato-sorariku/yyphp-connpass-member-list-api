@@ -52,10 +52,7 @@ class LoadYyphpConnpass extends Command
      */
     public function handle()
     {
-        $html = file_get_contents("http://web/connpass.html");
-        // $dom = phpQuery::newDocument($html);
-        // dd($dom->find('.group_event_list')->text());
-
+        $html = file_get_contents("https://yyphp.connpass.com/");
         $events = [];
 
         $eventsDom = phpQuery::newDocument($html)->find(".group_event_list");
@@ -123,7 +120,7 @@ class LoadYyphpConnpass extends Command
         //各イベント日の参加者情報取得
         foreach($events as $eventKey => $event)
         {
-            $html = file_get_contents("http://web/participation_connpass.htm");
+            $html = file_get_contents("https://yyphp.connpass.com/event/$event->id/participation/");
 
             //種別ごと
             $participationDoms = phpQuery::newDocument($html)->find(".participation_table_area");
