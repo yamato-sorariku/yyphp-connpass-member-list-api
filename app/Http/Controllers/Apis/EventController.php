@@ -40,7 +40,9 @@ class EventController extends Controller
             ];
         }
 
-        return $responseEvents;
+        return [
+            'events' => $responseEvents,
+        ];
     }
 
     public function eventDetail($eventId)
