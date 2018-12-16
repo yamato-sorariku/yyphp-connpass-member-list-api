@@ -21,7 +21,7 @@ class FileCacheEventRepository implements EventRepositoryInterface
         $events = $this->events();
         info($events);
 
-        if( is_array($events) )
+        if( ! is_array($events) )
         {
             return null;
         }
