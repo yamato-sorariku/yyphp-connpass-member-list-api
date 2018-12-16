@@ -1,0 +1,2305 @@
+<!DOCTYPE html>
+<!--
+
+
+   _|_|_|    _|_|    _|_|_|    _|_|_|    _|_|_|      _|_|_|    _|_|_|    _|_|_|
+ _|        _|    _|  _|    _|  _|    _|  _|    _|  _|    _|  _|_|      _|_|
+ _|        _|    _|  _|    _|  _|    _|  _|    _|  _|    _|      _|_|      _|_|
+   _|_|_|    _|_|    _|    _|  _|    _|  _|_|_|      _|_|_|  _|_|_|    _|_|_|
+                                         _|
+                                         _|
+-->
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-style-type" content="text/css; charset=utf-8" />
+<meta name="keywords" content="connpass,コンパス,イベント,IT勉強会,検索,開催,募集,参加,ソーシャル連携,アクセス解析,手数料無料" />
+<meta name="description" content="YYPHPの詳細ページです。" />
+<title>YYPHP - connpass</title>
+
+  
+
+<link type="text/css" href="https://connpass.com/static/css/connpass.css?20181129161924
+" rel="stylesheet" media="all" />
+
+  
+  
+<style>
+/*背景色*/
+body.page_group {
+  
+  background-color: #f7f7f7;
+  
+}
+/*カバー画像*/
+.group_header_area .group_cover {
+  
+  background-image: url(https://connpass-tokyo.s3.amazonaws.com/thumbs/2f/d3/2fd30d3c6cb592709a159fd2ad4ac2a9.png);
+  
+}
+</style>
+
+
+
+
+
+
+<!-- Google+ Page -->
+<link href="https://plus.google.com/106041817090493633309/" rel="publisher" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="connpass" />
+<meta property="fb:app_id" content="259235460759625" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@connpass_jp"/>
+<meta name="twitter:url" content="https://yyphp.connpass.com/?utm_campaign=twitter_card_series_4357&utm_source=twitter_card&utm_medium=twitter"/>
+
+<meta property="og:title" content="YYPHP"/>
+<meta property="og:url" content="https://yyphp.connpass.com/"/>
+
+<meta property="og:image" content="https://connpass-tokyo.s3.amazonaws.com/thumbs/24/53/2453f91f3a16f3f15b20c0178327b035.png" />
+<meta property="og:description" content="YYPHPは一言で「PHPerの部室」です。PHPについて、雑に、ゆるく、ワイワイ話し合う集いです。毎回お題を決めずに雑談を出発点にいろいろなことを突発的に やります。集まった人でコードリーディングをすることもあれば、一緒に開発ツールを触ってみたり、フレームワークについての情報交換をすることもあります。開催は毎週 高田馬場19:00にて。"/>
+
+<meta itemprop="name" content="YYPHP">
+<meta itemprop="description" content="YYPHPは一言で「PHPerの部室」です。PHPについて、雑に、ゆるく、ワイワイ話し合う集いです。毎回お題を決めずに雑談を出発点にいろいろなことを突発的に やります。集まった人でコードリーディングをすることもあれば、一緒に開発ツールを触ってみたり、フレームワークについての情報交換をすることもあります。開催は毎週 高田馬場19:00にて。">
+
+<meta itemprop="image" content="https://connpass-tokyo.s3.amazonaws.com/series/4357/0ceb8a5e05bd4fd7aa4bc305d1c442b4.png">
+
+
+
+
+
+
+
+
+
+<link rel="alternate" title="グループイベント Atom" type="application/atom+xml" href="https://yyphp.connpass.com/ja.atom" />
+
+
+<link rel="shortcut icon" href="https://connpass.com/static/img/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon-precomposed" href="https://connpass.com/static/img/apple_touch_icon.png" />
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+  if (typeof console == "undefined") {window.console={log: function () {}};console.warn = console.debug = console.log;}
+</script>
+
+<script type="text/javascript">
+  function cst(cat, evt, targetUrl) {
+    if (window._gaq) {
+      _gaq.push(['_trackSocial', cat, evt, targetUrl]);
+    } else {
+      console.log("trackSocial(" + cat + ", " + evt + ", " + targetUrl + ")");
+    }
+  };
+  function cet(cat, evt, label, value, non_interaction) {
+    if (!label) {
+      label = '222038';
+    }
+    if (window._gaq) {
+      _gaq.push(['_trackEvent', cat, evt, label, value, non_interaction]);
+    } else {
+      console.log("trackEvent(" + cat + ", " + evt + ", " + label + ", " + value + ", " + non_interaction + ")");
+    }
+  };
+  function tol(link, cat, evt, label, value, non_interaction) {
+    cet(cat, evt, label, value, non_interaction);
+    if (link) {
+      var func;
+      if (link.href) {
+        func = function() {
+          document.location.href = link.href;
+        };
+      } else {
+        if (link.submit) {
+          func = function() {
+            link.submit();
+          };
+        } else {
+          if (link.form) {
+            func = function() {
+              link.form.submit();
+            };
+          }
+        }
+      }
+      if (func) {
+        setTimeout(func, 100);
+      }
+    }
+  };
+</script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26036000-1']);
+  _gaq.push(['_setDomainName', 'connpass.com']);
+  _gaq.push(['_setCustomVar', 1, 'Authenticated', 'true', 1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+<script language="JavaScript" type="text/javascript" charset="UTF-8" src="//cdn.bigmining.com/private/media/js/connpass_bigmining.js"></script>
+
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script type="text/javascript">
+var path_value = location.pathname.substr(0,40);
+var parameter_value = location.search.substr(0, 40);
+var ref_value = "null";
+if (document.referrer){
+var ref_array=new Array();
+ref_array=document.referrer.split("/"); 
+ref_value = ref_array[2];}
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+
+
+    googletag.pubads().setTargeting('URLs', path_value).setTargeting('Ref', ref_value).setTargeting('Para', parameter_value);
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+
+</head>
+
+<body id="GroupBase" class="page_group page_edit page_group_base">
+
+<div id="wrapper" class="lang_ja">
+
+  <div id="header">
+    <div class="container clearfix">
+      <h1><a href="https://connpass.com/" title="connpass - エンジニアをつなぐIT勉強会支援プラットフォーム"><img src="https://connpass.com/static/img/common/sitelogo_w_670x124.png" alt="connpass - エンジニアをつなぐIT勉強会支援プラットフォーム"></a></h1>
+      <div class="right">
+        
+        
+        <ul class="dropdown_menu">
+          <li id="personalMenu"><img src="https://connpass.com/static/img/common/icon_white_setting.png">
+           <ul class="dropdown_sub">
+              <li class="username"><a href="https://connpass.com/user/yamatox/" title="yamato_ja1461">
+                
+                  <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/b2/f3/b2f39bae024fc85990b8723a67cd3ea5.png" width="23" height="23" alt="yamato_ja1461" />
+                
+                <span>yamato_ja1461</span>
+              </a></li>
+              <li><a href="https://connpass.com/settings/">利用設定</a></li>
+              <li><a href="https://connpass.com/logout/">ログアウト</a></li>
+           </ul>
+          </li>
+        </ul>
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+<div id="contents" class="container main_side_column clearfix">
+  <div id="flash_message_area" style="display: none;">
+    
+  </div>
+
+  
+<div class="group_header_area group_box clearfix">
+  <div class="group_cover clearfix">
+    <a href="https://yyphp.connpass.com/" class="thumbnail text_center" title="YYPHP">
+    
+      <span class="image_bg" style="background-image: url(https://connpass-tokyo.s3.amazonaws.com/thumbs/b6/1e/b61e2e259d4e03667a3d131fa46007f8.png);" width="162" height="110"></span>
+    
+    </a>
+  </div>
+  <div class="group_title clearfix  with_event">
+    <h2><a href="https://yyphp.connpass.com/">YYPHP</a></h2>
+    
+    
+    
+      <div class="upcoming_events_list">
+        <div>
+          <span class="label_status_event offer">開催前イベント</span>
+          <span class="more_link"><a href="https://yyphp.connpass.com/#upcoming_events_list"><span class="icon_black_arrow_right"></span>もっと見る</a></span>
+        </div>
+        
+        <p class="event_title">
+          <span class="date">
+            2018/12/14(金)
+          </span>
+          <a href="https://yyphp.connpass.com/event/110978/">#YYPHP #65【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>  
+        </p>
+        
+        <p class="event_title">
+          <span class="date">
+            2018/12/21(金)
+          </span>
+          <a href="https://yyphp.connpass.com/event/110979/">#YYPHP #66【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>  
+        </p>
+        
+      </div>
+    
+  </div>
+  <div class="group_menu clearfix">
+    <ul class="tab left">
+      
+      <li><a href="https://yyphp.connpass.com/event/">イベント</a></li>
+      <li><a href="https://yyphp.connpass.com/participation/">メンバー</a></li>
+      <li><a href="https://yyphp.connpass.com/presentation/">資料</a></li>
+    </ul>
+    
+    
+    <div class="right">
+    <div class="social_btn_area mt_10 left">
+      <span class="hatena">
+        
+        <a href="http://b.hatena.ne.jp/entry/yyphp.connpass.com/" class="hatena-bookmark-button" data-hatena-bookmark-title="YYPHP" data-hatena-bookmark-layout="simple-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+      </span>
+      <span class="google">
+        <span><g:plusone size="medium" href="https://yyphp.connpass.com/"></g:plusone></span>
+      </span>
+      <span class="facebook">
+        
+<fb:like href="https://yyphp.connpass.com/" send="false" layout="button_count" width="100" show_faces="false"></fb:like>
+
+
+
+
+      </span>
+      <span class="twitter">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://yyphp.connpass.com/" data-text="YYPHP" data-lang="ja" data-related="connpass_jp"></a>
+      </span>
+    </div>
+    <div class="GroupMembership member_btn_area right">
+      
+        <span class="GroupMembershipButton btn btn_size_small btn_default" onClick="cet('Series', 'watch');" style="display:none;" title="メンバーになると、このグループの新規イベントのお知らせが届いたりします">メンバーになる</span>
+        <span class="RemoveGroupMembershipButton btn btn_size_small btn_low_priority watch leave" onClick="cet('Series', 'unwatch');" title="グループを退会する">グループのメンバーです</span>
+      
+    </div>
+    </div>
+    
+
+  </div>
+</div>
+
+
+  <div class="clearfix">
+    
+      
+      <div id="main">
+        
+  
+  <div class="group_box">
+    <h3 class="title">グループの説明</h3>
+    
+      <div id="editor_area" class="group_inner description">
+        <p>YYPHPは一言で「PHPerの部室」です。PHPについて、雑に、ゆるく、ワイワイ話し合う集いです。毎回お題を決めずに雑談を出発点にいろいろなことを突発的にやります。集まった人でコードリーディングをすることもあれば、一緒に開発ツールを触ってみたり、フレームワークについての情報交換をすることもあります。開催は毎週高田馬場19:00にて。</p>
+      </div>
+    
+  </div>
+  
+
+  
+  <a name="upcoming_events_list"></a>
+  <div class="open_event_area group_box">
+    <h3 class="title">次回イベント</h3>
+    <div class="group_inner">
+    
+    
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/110978/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/41/27/41276c99fe6dae55bb183d36075cf0e7.png" width="162" height="110" alt="#YYPHP #65【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event offer">開催前</span>
+      2018/12/14（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-12-14T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-12-14T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/110978/">#YYPHP #65【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/110978/participation/">
+        
+          
+          <span class="amount"><span>11</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/hirasaki/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/8a/98/8a98b820e59e8ad0198db1eed3cf3cad.png" width="23" height="23" alt="m.hirasaki"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+    
+    
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/110979/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/41/27/41276c99fe6dae55bb183d36075cf0e7.png" width="162" height="110" alt="#YYPHP #66【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event offer">開催前</span>
+      2018/12/21（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-12-21T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-12-21T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/110979/">#YYPHP #66【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/110979/participation/">
+        
+          
+          <span class="amount"><span>11</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+    
+    </div>
+  </div>
+  
+
+
+
+  
+  <div class="group_box">
+    <h3 class="title">終了したイベント
+      <span class="right"><a href="https://yyphp.connpass.com/event/" class="btn btn_default btn_size_small">全てのイベントを見る（66件）</a></span>
+    </h3>
+    <div class="group_inner">
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/110977/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/41/27/41276c99fe6dae55bb183d36075cf0e7.png" width="162" height="110" alt="#YYPHP #64【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/12/07（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-12-07T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-12-07T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/110977/">#YYPHP #64【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/110977/participation/">
+        
+          
+          <span class="amount"><span>13</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/106395/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/41/27/41276c99fe6dae55bb183d36075cf0e7.png" width="162" height="110" alt="#YYPHP #63【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/11/30（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-11-30T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-11-30T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/106395/">#YYPHP #63【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/106395/participation/">
+        
+          
+          <span class="amount"><span>18</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/tttabtt823/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/c4/6d/c46d8036fabdc92825a7a66aca8da0b7.png" width="23" height="23" alt="たべたつ"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/106394/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/3d/87/3d87a5f335a8dcf1beaa7266a078aacd.png" width="162" height="110" alt="#YYPHP #62【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/11/23（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-11-23T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-11-23T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/106394/">#YYPHP #62【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/106394/participation/">
+        
+          
+          <span class="amount"><span>13</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/106393/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/3a/d2/3ad2e98d8eb00bbcdbe46163353a08d4.png" width="162" height="110" alt="#YYPHP #61【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/11/16（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-11-16T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-11-16T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/106393/">#YYPHP #61【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/106393/participation/">
+        
+          
+          <span class="amount"><span>14</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/tttabtt823/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/c4/6d/c46d8036fabdc92825a7a66aca8da0b7.png" width="23" height="23" alt="たべたつ"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/106392/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/96/42/9642dfbfc646d00a0daa95eeaeaaa9ba.png" width="162" height="110" alt="#YYPHP #60【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/11/09（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-11-09T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-11-09T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/106392/">#YYPHP #60【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/106392/participation/">
+        
+          
+          <span class="amount"><span>11</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/llminatoll/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/46/da/46da175d13e6c4b53f4b934c409b8a2f.png" width="23" height="23" alt="湊川あい@llminatoll"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/106391/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f7/25/f725f251d23eca62564b3beba68aa760.png" width="162" height="110" alt="#YYPHP #59【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/11/02（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-11-02T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-11-02T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/106391/">#YYPHP #59【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/106391/participation/">
+        
+          
+          <span class="amount"><span>13</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/camomile_cafe/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/fe/64/fe64e78591440c497ae9805e8fb9693b.png" width="23" height="23" alt="camomile_cafe"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/103260/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f7/25/f725f251d23eca62564b3beba68aa760.png" width="162" height="110" alt="#YYPHP #58【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/10/26（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-10-26T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-10-26T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/103260/">#YYPHP #58【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/103260/participation/">
+        
+          
+          <span class="amount"><span>9</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/103259/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f7/25/f725f251d23eca62564b3beba68aa760.png" width="162" height="110" alt="#YYPHP #57【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/10/19（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-10-19T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-10-19T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/103259/">#YYPHP #57【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/103259/participation/">
+        
+          
+          <span class="amount"><span>9</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/103258/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f7/25/f725f251d23eca62564b3beba68aa760.png" width="162" height="110" alt="#YYPHP #56【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/10/12（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-10-12T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-10-12T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/103258/">#YYPHP #56【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/103258/participation/">
+        
+          
+          <span class="amount"><span>13</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/llminatoll/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/46/da/46da175d13e6c4b53f4b934c409b8a2f.png" width="23" height="23" alt="湊川あい@llminatoll"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/reoring/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+      
+
+<div class="group_event_list vevent clearfix">
+  <div class="thumb_area">
+    <a class="image_link" href="https://yyphp.connpass.com/event/103257/">
+      
+        <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f7/25/f725f251d23eca62564b3beba68aa760.png" width="162" height="110" alt="#YYPHP #55【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】" />
+      
+    </a>
+  </div>
+  <div class="group_event_inner">
+    
+    
+    <p class="schedule">
+      <span class="label_status_event close">終了</span>
+      2018/10/05（金） 19:00〜
+      <span class="dtstart"><span class="value-title" title="2018-10-05T10:00:00Z"></span></span>
+      <span class="dtend"><span class="value-title" title="2018-10-05T12:00:00Z"></span></span>
+    </p>
+    
+
+    <p class="event_title"><a class="url summary" href="https://yyphp.connpass.com/event/103257/">#YYPHP #55【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a></p>
+
+    
+    
+    
+    <p class="event_owner">
+      <span class="icon_owner">
+      
+        <a class="image_link" href="https://connpass.com/user/suin/">
+          
+            <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/f3/38/f338462a03c3fa531f2238f5b83a8ab3.png" width="16" height="16" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" />
+          
+          suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)
+        </a>
+      
+       他
+      </span>
+    </p>
+    
+    
+
+    
+    <p class="event_place location">
+      <span class="icon_place">
+      
+        
+          東京都新宿区高田馬場1-28-10 三慶ビル4F
+        
+      
+      </span>
+    </p>
+
+    
+    
+    
+    <p class="event_participants">
+      <a href="https://yyphp.connpass.com/event/103257/participation/">
+        
+          
+          <span class="amount"><span>12</span></span>人
+        
+      </a>
+    </p>
+    
+    
+  
+  
+  <div class="follow_info_area clearfix">
+    
+    <div class="follow_list_area entry clearfix">
+      <p class="follow_count"><span class="icon_entry">フォロー参加者</span></p>
+      <ul class="follow_list">
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/camomile_cafe/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/fe/64/fe64e78591440c497ae9805e8fb9693b.png" width="23" height="23" alt="camomile_cafe"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/suin/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"  />
+            
+          </a>
+        </li>
+        
+        <li>
+          <a class="image_link" href="https://connpass.com/user/nouphet/">
+            
+              <img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました"  />
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+
+    
+  </div>
+  
+
+  </div>
+</div>
+
+      
+
+    </div>
+  </div>
+  
+
+  
+
+
+      </div>
+    
+    
+    <div id="side_area">
+      
+  <div class="group_box">
+    <h3 class="title">
+      メンバー
+      <a href="https://yyphp.connpass.com/participation/">（<span class="amount">444</span>人）</a>
+    </h3>
+    <div class="group_inner">
+      <h4 class="sub_title">管理者</h4>
+      <ul class="list_user_icon clearfix">
+        
+        
+        <li>
+          <a href="https://connpass.com/user/suin/" class="image_link" title="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/63/72/6372c85fba54417c63324a88125dc8e0.png" width="23" height="23" alt="suin|｡･ω･)。o (&lt;b&gt;PHPer集まれ&lt;/b&gt;)" /></a>
+        </li>
+        
+        <li>
+          <a href="https://connpass.com/user/nouphet/" class="image_link" title="nouphet|PHPプログラミングはじめました"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/6f/46/6f466586673cd7ef65c77eef908a9f68.png" width="23" height="23" alt="nouphet|PHPプログラミングはじめました" /></a>
+        </li>
+        
+        <li>
+          <a href="https://connpass.com/user/reoring/" class="image_link" title="reoring|｡･ω･)。o (PHPer集まれ)"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7d/13/7d135e0fe15bf15d6ee04647bf107ce1.png" width="23" height="23" alt="reoring|｡･ω･)。o (PHPer集まれ)" /></a>
+        </li>
+        
+      </ul>
+
+      <h4 class="sub_title">他のメンバー</h4>
+
+      
+        <ul class="list_user_icon clearfix">
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/masahiro_suzuki_37266/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/b1/09/b109225985a26e3910e67fe963af4395.png" width="23" height="23" alt="masahiro_suzuki_37266" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/sofpl/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/a0/26/a026745ea5c49ca44fa45ea593b81a7b.png" width="23" height="23" alt="sofpl" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/background-color/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/d6/8a/d68aa94f19dd4ab1cc8a77560e458dde.png" width="23" height="23" alt="backgroundcolor" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/unadesuga/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/cd/56/cd560638eb25cbcfe6fa673ae167afb7.png" width="23" height="23" alt="うな" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/cojito/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/fb/a9/fba946a0e769bb64e256298d91471c1e.png" width="23" height="23" alt="cojito" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/akane_kuriyama_9/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/92/0c/920c8bc363ee26b481492ebeaf2ad006.png" width="23" height="23" alt="akane" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/rinrinring0star/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/4f/24/4f245c0bdbffaaaf4135b419f6578398.png" width="23" height="23" alt="rinrinring0star" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/mukaken/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/65/73/6573f815abac47556e4cc395ba091804.png" width="23" height="23" alt="mukaken" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/Sally_42/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/3c/2f/3c2ffc3f11e83ad88f9e57abc2a5355e.png" width="23" height="23" alt="さりー" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/chiroruxx/"><img src="https://connpass.com/static/img/common/user_no_image.gif" width="23" height="23" alt="chiroruxx" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/ka_miyabe/"><img src="https://connpass.com/static/img/common/user_no_image.gif" width="23" height="23" alt="0E11" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/torippana/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/be/c4/bec488861006718a7ad8497658d9d2dd.png" width="23" height="23" alt="torippana" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/awaranoname/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/7e/b7/7eb761480b5832889701008a5dcc530a.png" width="23" height="23" alt="SATO.H" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/suupoo/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/ec/35/ec35ef46995b285cffc1e2c5a73902d4.png" width="23" height="23" alt="すぅ" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/yodaka/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/26/7e/267ec5c3ffae31b2dfb253085ac63aa5.png" width="23" height="23" alt="yodaka" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/gamu1012/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/fe/c8/fec81df72768d0fa17f6de4c6e630011.png" width="23" height="23" alt="gamu1012" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/yukari-yoshihara/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/1f/e0/1fe0e3b022de40c5eabde6f558483878.png" width="23" height="23" alt="yukari-yoshihara" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/TeruhisaMARUTA/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/17/2f/172f2fa81a0fa4258ebc6081992edf37.png" width="23" height="23" alt="TeruhisaMARUTA" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/keiko91/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/ac/86/ac860f5fefcf302b266517994e62cea0.png" width="23" height="23" alt="keiko91" /></a>
+            
+          </li>
+          
+          <li>
+            
+              <a class="image_link" href="https://connpass.com/user/adachi_0523/"><img src="https://connpass-tokyo.s3.amazonaws.com/thumbs/fe/80/fe8079dd2b8a707715799615ea325590.png" width="23" height="23" alt="adachi_0523" /></a>
+            
+          </li>
+          
+        </ul>
+      
+
+    </div>
+  </div>
+
+
+
+
+  <div class="group_box">
+    <h3 class="title">資料<a href="https://yyphp.connpass.com/presentation/">（32件）</a></h3>
+    <div class="group_inner">
+      <ul class="side_list_doc">
+      
+        
+        <li>
+          <a href="https://qiita.com/nouphet/items/95cccd7ae033523366cd" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png);"></div>
+              
+            </div>
+            <p class="doc_title">YYPHP#51「みんなが好きなフレームワーク、どのくらいまじめにテストやってる？、PHPを使う上でこれは知っておくべきこと、1番詳しいPHPの技術書はどれですか？、Dockerのベストプラクテ...</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/100183/" target="_blank">#YYPHP #51【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>
+        </li>
+        
+        <li>
+          <a href="https://qiita.com/nouphet/items/c89e90ec3594c2592486" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png);"></div>
+              
+            </div>
+            <p class="doc_title">YYPHP#50「製作途中の漫画について感想をもらいたい、最初どういう風に勉強していったのか、PHPの入門書を読み終えた人が中級者になるために何を読んだら良いか、どうやったら強いエンジニアになれ...</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/95845/" target="_blank">#YYPHP #50【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>
+        </li>
+        
+        <li>
+          <a href="https://www.youtube.com/watch?v=IOJH8n9B5D4" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://i.ytimg.com/vi/IOJH8n9B5D4/hqdefault.jpg);"></div>
+              
+            </div>
+            <p class="doc_title">#YYPHP #50 「最初どういう風に勉強していったのか、PHPの入門書を読み終えた人が中級者になるために何を読んだら良いか、どうやったら強いエンジニアになれるか？、他」 - YouTube</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/95845/" target="_blank">#YYPHP #50【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>
+        </li>
+        
+        <li>
+          <a href="https://www.youtube.com/watch?v=1UCZoG9CAa4" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://i.ytimg.com/vi/1UCZoG9CAa4/maxresdefault.jpg);"></div>
+              
+            </div>
+            <p class="doc_title">#YYPHP #51 「どのくらいテストやってる？、これは知っておくべきこと、Dockerのベストプラクティス、PHPUnitのコードバレッジと実行速度の話、これから目指すさらなる高み」 - Y...</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/100183/" target="_blank">#YYPHP #51【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>
+        </li>
+        
+        <li>
+          <a href="https://www.youtube.com/watch?v=nSGqExr550c&amp;feature=youtu.be" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://i.ytimg.com/vi/nSGqExr550c/hqdefault.jpg);"></div>
+              
+            </div>
+            <p class="doc_title">#YYPHP #45「Goの学び方、Q#とは、アセンブラ勉強法、PHPの情報収集どうやってる？、PHPDocどのくらい書く？、初心者向けMVC、初心者向けDockerの説明」 - YouTube</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/93169/" target="_blank">#YYPHP #45【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>
+        </li>
+        
+        <li>
+          <a href="https://qiita.com/nouphet/items/3a4970530a3daba05a6d" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png);"></div>
+              
+            </div>
+            <p class="doc_title">YYPHP#45「Goの学び方、Q#とは、アセンブラ勉強法、PHPの情報収集どうやってる？、PHPDocどのくらい書く？、初心者向けMVC、初心者向けDockerの説明」</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/93169/" target="_blank">#YYPHP #45【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>
+        </li>
+        
+        <li>
+          <a href="https://qiita.com/nouphet/items/69263d7dc2808a783ebf" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png);"></div>
+              
+            </div>
+            <p class="doc_title">YYPHP#46「DockerでLaravelを動かそうハンズオン！」</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/93170/" target="_blank">#YYPHP #46【DockerでLaravelを動かそう】</a>
+        </li>
+        
+        <li>
+          <a href="https://www.youtube.com/watch?v=bPh3jwdFyts&amp;feature=youtu.be" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://i.ytimg.com/vi/bPh3jwdFyts/hqdefault.jpg);"></div>
+              
+            </div>
+            <p class="doc_title">#YYPHP #47 「Macを新しく買ったらこれだけは入れとけリスト、LaravelとかEloquentを使っているOSS、構成力･設計力を高めるには、Linux基礎知識を素早く学ぶ、他」 -...</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/95842/" target="_blank">#YYPHP #47【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>
+        </li>
+        
+        <li>
+          <a href="https://qiita.com/nouphet/items/01b238926369792361a2" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png);"></div>
+              
+            </div>
+            <p class="doc_title">YYPHP#47「Macを新しく買ったらこれだけはいれとけリスト、LaravelとかEloquentを使っているOSS、fatal errorを例外としてキャッチ、チームでの開発どうやる？、構成...</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/95842/" target="_blank">#YYPHP #47【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>
+        </li>
+        
+        <li>
+          <a href="https://www.youtube.com/watch?v=9RglaIwCGtc&amp;feature=youtu.be" target="_blank" rel="nofollow">
+            
+            <div class="thumbnail">
+              
+                <div class="thumbnail_img" style="background-image: url(https://i.ytimg.com/vi/9RglaIwCGtc/hqdefault.jpg);"></div>
+              
+            </div>
+            <p class="doc_title">#YYPHP #48 「みんな最初はどう学んだのか、エンジニア思春期、命名で気をつけること、UTF-8のNFCとNFD問題、技術的負債の解決方法、BDD」 - YouTube</p>
+          </a>
+          <a class="event_title" href="https://yyphp.connpass.com/event/95843/" target="_blank">#YYPHP #48【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+
+
+    </div>
+    
+  </div>
+  
+</div>
+
+
+
+
+  <div id="footer">
+    <div class="container text_center">
+      <div class="group_title"><a href="https://yyphp.connpass.com/">YYPHP</a></div>
+      <div class="footer_link">
+        <a href="http://help.connpass.com/" target="_blank" title="connpassのヘルプ">ご利用ガイド</a>
+        <a href="https://connpass.com/term/">利用規約</a>
+        <a href="https://connpass.com/law/">特定商取引法に基づく表示</a>
+        <a href="https://connpass.com/privacy/">プライバシーポリシー</a>
+        <a href="https://connpass.com/inquiry/">connpassへのお問い合わせ</a>
+      </div>
+      <div class="footer_powerd">
+        <a href="https://connpass.com/">powered by connpass</a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+<script id="EventCreateTemplate" type="text/html">
+  <div class="popup">
+    <div class="popup_wrapper">
+      <div class="popup_header">
+        <h2 class="popup_title">イベントを作成する</h2>
+        <span class="close_btn_area">
+          <span class="btn btn_default btn_size_small corner_none modal-close" title="閉じる"><span class="icon_black_close"></span></span>
+        </span>
+      </div>
+      <div class="popup_contents text_center">
+        <p class="font_16 mb_10"><strong>イベント名を入力してください</strong></p>
+        <input name="title" type="text" class="form_input_text form_width_450 font_18">
+
+        <div class="mt_10 mb_30">
+          <button type="submit" class="EventCreateSubmit btn btn_action btn_size_large" onClick="cet('Create', 'create_event');">イベントを作成</button>
+        </div>
+        <div class="right">
+          <a href="https://connpass.com/group/new/"><span class="icon_red_four_right"></span>グループを作成</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script id="MessageTemplate" type="text/html">
+  <p class="message <%= level %>"><%- message %></p>
+</script>
+
+
+<div id="fb-root"></div>
+
+
+
+
+
+
+<div id="CurrentUserObj" style="display:none;" data-username="yamatox" data-display_name="yamato_ja1461" data-avatar="https://connpass-tokyo.s3.amazonaws.com/thumbs/44/b9/44b90f9dd51a2711eeb9083991068f2c.png" data-is_deactivated="false" data-id="222038" data-profile_url="http://connpass.com/user/yamatox/"></div>
+<div id="CSRFToken" style="display:none;" data-csrftoken="ezXnq3HdCQyMEf57riOcWtlu4MK5aIvD"></div>
+
+<script type="text/javascript" src="https://connpass.com/static/js/require.js?20181129161924
+"></script>
+<script type="text/javascript" src="https://connpass.com/static/js/connpass.min.js?20181129161924
+"></script>
+<script type="text/javascript">
+require.config({
+  
+  baseUrl: 'https://connpass.com/static/js/',
+  locale: 'ja',
+
+  config: {
+    'csrf': {
+      CSRF_COOKIE_NAME: 'connpass-csrftoken'
+    },
+    'sanca': {
+      
+      LOG_LEVEL: "WARNING",
+      HTTP_HOST: 'connpass.com',
+      STATIC_URL: 'https://connpass.com/static/',
+      MEDIA_URL: 'https://connpass.com/media/',
+      API_BASE_URL: 'https://yyphp.connpass.com/api'
+    }
+  }
+});
+</script>
+
+
+<script type="text/javascript">
+  require([
+    'jquery', 'jquerytools/tooltip.dynamic',
+    'jquerytools/tooltip.slide', 'design'
+  ], function($, Views) {
+    $(function() {
+      $('.Help').tooltip({
+        effect: 'slide',
+        position: 'bottom center',
+        offset: [20, 0],
+      }).dynamic({
+        bottom: {
+          direction: 'down',
+          bounce: true
+        }
+      });
+    });
+  });
+
+  require(['jquery', 'cs!sanca/views/personal_menu'], function($, Views) {
+    var personal_menu = new Views.PersonalMenu({
+      el: '#header',
+      dropdown_el: '#personalMenu'
+    });
+  });
+
+  require(['jquery', 'cs!sanca/views/feedback'], function($, Views) {
+    var feedbackform = new Views.FeedbackView({
+      el: '#FeedbackForm'
+    });
+  });
+
+  require([
+    'jquery', 'underscore', 'cs!sanca/views/event_create', 
+  ], function($, _, Views) {
+    $(function() {
+      var event_create = new Views.EventCreateWindow({
+        template_el: '#EventCreateTemplate'
+      });
+      $('.EventCreate').click(function() {
+        event_create.openModal();
+      });
+
+      
+      
+      if (_.indexOf(window.location.search.substring(1).split("&"), 'create=1') !== -1) {
+        event_create.openModal();
+      }
+    });
+  });
+
+  
+
+</script>
+<script type="text/javascript">
+  window.fbAsyncInit = function() {
+    FB.init({
+      version: 'v2.8',
+      status: true,
+      appId: '259235460759625',
+      xfbml: true  // Like btn
+    });
+    FB.Event.subscribe('edge.create', function(targetUrl) {
+      typeof cst === "function" && cst('facebook', 'like', targetUrl);
+    });
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      typeof cst === "function" && cst('facebook', 'unlike', targetUrl);
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_JP/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script type="text/javascript">
+require([
+    'jquery', 'underscore', 'cs!sanca/models/group', 'cs!sanca/views/group_base',
+], function($, _, Models, Views) {
+  $(function() {
+    var detail_view = new Views.GroupBaseView({
+      el: '#GroupBase',
+      model: new Models.Group({"status": "public", "other_links": [], "description": "\u003cp\u003eYYPHP\u306f\u4e00\u8a00\u3067\u300cPHPer\u306e\u90e8\u5ba4\u300d\u3067\u3059\u3002PHP\u306b\u3064\u3044\u3066\u3001\u96d1\u306b\u3001\u3086\u308b\u304f\u3001\u30ef\u30a4\u30ef\u30a4\u8a71\u3057\u5408\u3046\u96c6\u3044\u3067\u3059\u3002\u6bce\u56de\u304a\u984c\u3092\u6c7a\u3081\u305a\u306b\u96d1\u8ac7\u3092\u51fa\u767a\u70b9\u306b\u3044\u308d\u3044\u308d\u306a\u3053\u3068\u3092\u7a81\u767a\u7684\u306b\u3084\u308a\u307e\u3059\u3002\u96c6\u307e\u3063\u305f\u4eba\u3067\u30b3\u30fc\u30c9\u30ea\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u3059\u308b\u3053\u3068\u3082\u3042\u308c\u3070\u3001\u4e00\u7dd2\u306b\u958b\u767a\u30c4\u30fc\u30eb\u3092\u89e6\u3063\u3066\u307f\u305f\u308a\u3001\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af\u306b\u3064\u3044\u3066\u306e\u60c5\u5831\u4ea4\u63db\u3092\u3059\u308b\u3053\u3068\u3082\u3042\u308a\u307e\u3059\u3002\u958b\u50ac\u306f\u6bce\u9031\u9ad8\u7530\u99ac\u583419:00\u306b\u3066\u3002\u003c/p\u003e", "title": "YYPHP", "image": "https://connpass-tokyo.s3.amazonaws.com/thumbs/a2/52/a252e55f9652781fb4459ec4963c3d34.png", "public_url": "https://yyphp.connpass.com/", "sub_title": "", "owner_text": "", "twitter_username": "", "website_name": "", "website_url": "", "cover_image": "https://connpass-tokyo.s3.amazonaws.com/thumbs/2d/0f/2d0fa0d61aac0a095dc4fbf6402e2b2e.png", "facebook_url": "", "subdomain": "yyphp", "background_color": "", "id": 4357, "description_input": "YYPHP\u306f\u4e00\u8a00\u3067\u300cPHPer\u306e\u90e8\u5ba4\u300d\u3067\u3059\u3002PHP\u306b\u3064\u3044\u3066\u3001\u96d1\u306b\u3001\u3086\u308b\u304f\u3001\u30ef\u30a4\u30ef\u30a4\u8a71\u3057\u5408\u3046\u96c6\u3044\u3067\u3059\u3002\u6bce\u56de\u304a\u984c\u3092\u6c7a\u3081\u305a\u306b\u96d1\u8ac7\u3092\u51fa\u767a\u70b9\u306b\u3044\u308d\u3044\u308d\u306a\u3053\u3068\u3092\u7a81\u767a\u7684\u306b\u3084\u308a\u307e\u3059\u3002\u96c6\u307e\u3063\u305f\u4eba\u3067\u30b3\u30fc\u30c9\u30ea\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u3059\u308b\u3053\u3068\u3082\u3042\u308c\u3070\u3001\u4e00\u7dd2\u306b\u958b\u767a\u30c4\u30fc\u30eb\u3092\u89e6\u3063\u3066\u307f\u305f\u308a\u3001\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af\u306b\u3064\u3044\u3066\u306e\u60c5\u5831\u4ea4\u63db\u3092\u3059\u308b\u3053\u3068\u3082\u3042\u308a\u307e\u3059\u3002\u958b\u50ac\u306f\u6bce\u9031\u9ad8\u7530\u99ac\u583419:00\u306b\u3066\u3002"}, {parse: true})
+    });
+    
+
+    $('.RemoveGroupMembershipButton').hover(function() {
+        $(this).text('　グループを退会する　');
+    }, function() {
+        $(this).text('グループのメンバーです');
+    });
+
+  });
+});
+</script>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'ja'}
+</script>
+
+<script type="text/javascript">
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "//platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+  return t;
+}(document, "script", "twitter-wjs"));
+
+twttr.ready(function (twttr) {
+    twttr.events.bind("tweet", function (event) {
+       if (event && typeof cst === "function") {
+         cst('twitter', 'tweet');
+       }
+    });
+});
+</script>
+
+
+<script type="text/javascript">
+require(['cs!sanca/views/event_create'], function(Views) {
+  $(function() {
+    var event_create = new Views.EventCreateWindow({
+      template_el: '#GroupEventCreateTemplate',
+      other_fields: {
+        series: 4357
+      }
+    });
+    $('.GroupEventCreate').click(function() {
+      event_create.openModal();
+    });
+  });
+});
+</script>
+<script id="GroupEventCreateTemplate" type="text/html">
+  
+
+<div class="popup">
+  <div class="popup_wrapper">
+    <div class="popup_header">
+      <h2 class="popup_title">このグループのイベントを作成する</h2>
+      <span class="close_btn_area">
+        <span class="btn btn_default btn_size_small corner_none modal-close" title="閉じる"><span class="icon_black_close"></span></span>
+    </span>
+    </div>
+    <div class="popup_contents text_center">
+      <p class="font_16 mb_10"><strong>イベント名を入力してください</strong></p>
+      <input name="title" type="text" class="form_input_text  form_width_450 font_18">
+
+      <ul class="mt_10 caution">
+        <li>グループの管理者がイベントの管理者になります。</li>
+        <li>このグループに所属したイベントとして作成されます。</li>
+        <li>後で別のグループに所属変更することは出来ません。</li>
+      </ul>
+
+      <div class="mt_10 mb_30">
+        <button type="submit" class="EventCreateSubmit btn btn_action btn_size_large" onClick="cet('Create', 'create_event');">イベントを作成</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+version: '3'
+services:
+    web:
+        image: nginx:1.15.7-alpine
+        ports:
+            - "80:80"
+        volumes:
+            - ./docker/web/conf/default.conf:/etc/nginx/conf.d/default.conf
+            - ./:/home/www/code
+        depends_on:
+            - php
+    php:
+        build: .
+        volumes:
+            - ./:/home/www/code
+        working_dir: /home/www/code
