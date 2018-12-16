@@ -28,7 +28,13 @@ class EventService
      */
     public function getHeldBeforeEvents()
     {
-        return $this->eventRepo->events();
+        $events = $this->eventRepo->events();
+        
+        if( is_array($events) )
+        {
+            return $events;
+        }
+        return [];
     }
 
     /**
