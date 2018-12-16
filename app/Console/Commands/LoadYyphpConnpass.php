@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use phpQuery;
 use Illuminate\Console\Command;
 use App\Domain\Model\Event;
+use App\Domain\Model\Participant;
 
 class LoadYyphpConnpass extends Command
 {
@@ -106,25 +107,66 @@ class LoadYyphpConnpass extends Command
                 
         }
 
+        $participants = [];
+
         //各イベント日の参加者情報取得
-        foreach($events as $key => $event)
+        foreach($events as $eventKey => $event)
         {
             $html = file_get_contents("http://web/participation_connpass.htm");
 
-            $participationDom = phpQuery::newDocument($html)->find(".participation_table_area");
-            foreach ($eventsDom as $key => $eventDom) {
+            //種別ごと
+            $participationDoms = phpQuery::newDocument($html)->find(".participation_table_area");
+
+            foreach ($participationDoms as $key => $participationDom) {
+
+                $frame = [];
+
                 $index = $key;
-                $userName = phpQuery::newDocument($html)
-                            ->find(".participation_table_area:eq($index)")
-                            ->find('.participants_table')
-                            ->find('tbody')
-                            ->find('tr')
-                            ->find('.user')
-                            ->find('.user_info')
-                            ->find('.display_name')
-                            ->find('a')
-                            ->text();
-                var_dump($userName);
+                $frameName = phpQuery::newDocument($html)
+                ->find(".participation_table_area:eq($index)")
+                ->find('.common_table')
+                ->find('thead')
+                ->find('tr')
+                ->find('th')
+                ->find('.label_ptype_name')
+                ->text();
+
+                $frame['name'] = $frameName;
+
+                $userDoms = phpQuery::newDocument($html)
+                ->find(".participation_table_area:eq($index)")
+                ->find('tbody')
+                ->find('tr');
+
+                foreach ($userDoms as $userIndex => $userDom) {
+
+                    $participant = new Participant();
+
+                    $userName = phpQuery::newDocument($html)
+                                ->find(".participation_table_area:eq($index)")
+                                ->find('tbody')
+                                ->find("tr:eq($userIndex)")
+                                ->find('.user_info')
+                                ->find('.display_name')
+                                ->find('a')
+                                ->text();
+
+                    $iconUrl = phpQuery::newDocument($html)
+                                ->find(".participation_table_area:eq($index)")
+                                ->find('tbody')
+                                ->find("tr:eq($userIndex)")
+                                ->find('.user_info')
+                                ->find('.image_link')
+                                ->find('img')
+                                ->attr("src");
+
+                    $participant->eventId = $event->id;
+                    $participant->name = $userName;
+                    $participant->iconUrl = $iconUrl;
+                    $participant->frame = $frameName;
+
+                    $participants[] = $participant;
+                }
             }
         }
     }
