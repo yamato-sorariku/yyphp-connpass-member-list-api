@@ -12,12 +12,14 @@ class FileCacheEventRepository implements EventRepositoryInterface
 
     public function events()
     {
+        info(Cache::get(self::CACHE_KEY_EVENTS));
         return Cache::get(self::CACHE_KEY_EVENTS);
     }
 
     public function eventById($eventId)
     {
         $events = $this->events();
+        info($events);
 
         if( is_array($events) )
         {
@@ -38,6 +40,7 @@ class FileCacheEventRepository implements EventRepositoryInterface
 
     public function saveEvents($events)
     {
+        info($events);
         Cache::forever(self::CACHE_KEY_EVENTS, $events);
     }
 }
