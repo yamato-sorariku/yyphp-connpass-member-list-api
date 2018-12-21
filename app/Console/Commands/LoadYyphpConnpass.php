@@ -66,7 +66,7 @@ class LoadYyphpConnpass extends Command
                         ->find('.label_status_event')
                         ->text();
 
-            if($status !== '開催前')
+            if( ! (status === '開催前' || $status === '開催中') )
             {
                 continue;
             }
