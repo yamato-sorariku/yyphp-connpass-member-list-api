@@ -86,7 +86,7 @@ class ParticipantService
                             ->find('img')
                             ->attr("src");
 
-                $participant->eventId = $event->id;
+                $participant->eventId = $eventId;
                 $participant->name = $userName;
                 $participant->iconUrl = $iconUrl;
                 $participant->frame = $frameName;
