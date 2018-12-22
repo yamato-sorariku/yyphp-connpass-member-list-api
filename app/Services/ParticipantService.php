@@ -26,4 +26,9 @@ class ParticipantService
         return $this->participantRepo->participantsByEventId($eventId);
     }
 
+    public function saveParticipants($participants)
+    {
+        $this->participantRepo->saveParticipants($participants);
+    }
+
 }

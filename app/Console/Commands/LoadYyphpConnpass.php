@@ -9,6 +9,9 @@ use App\Domain\Model\Event;
 use App\Domain\Model\Participant;
 use App\Domain\Model\EventRepositoryInterface;
 use App\Domain\Model\ParticipantRepositoryInterface;
+use App\Services\EventService;
+use App\Services\ParticipantService;
+use App\Services\ConnpassService;
 
 class LoadYyphpConnpass extends Command
 {
@@ -32,18 +35,21 @@ class LoadYyphpConnpass extends Command
      * @return void
      */
     public function __construct(
-        EventRepositoryInterface $eventRepositoryInterface,
-        ParticipantRepositoryInterface $participantRepositoryInterface
+        EventService $eventService,
+        ParticipantService $participantService,
+        ConnpassService $connpassService
     )
     {
         parent::__construct();
 
-        $this->eventRepo = $eventRepositoryInterface;
-        $this->participantRepo = $participantRepositoryInterface;
+        $this->eventService = $eventService;
+        $this->participantService = $participantService;
+        $this->connpassService = $connpassService;
     }
 
-    protected $eventRepo;
-    protected $participantRepo;
+    protected $eventService;
+    protected $participantService;
+    protected $connpassService;
 
     /**
      * Execute the console command.
@@ -53,13 +59,13 @@ class LoadYyphpConnpass extends Command
     public function handle()
     {
         info('Begin YYPHP load from Connpass');
-        $html = file_get_contents("https://yyphp.connpass.com/");
+        $topPageHtml = $this->connpassService->loadYYPHPConnpassPage();
         $events = [];
 
-        $eventsDom = phpQuery::newDocument($html)->find(".group_event_list");
+        $eventsDom = phpQuery::newDocument($topPageHtml)->find(".group_event_list");
         foreach ($eventsDom as $key => $eventDom) {
             $index = $key;
-            $status = phpQuery::newDocument($html)
+            $status = phpQuery::newDocument($topPageHtml)
                         ->find(".group_event_list:eq($index)")
                         ->find('.group_event_inner')
                         ->find('.schedule')
@@ -71,7 +77,7 @@ class LoadYyphpConnpass extends Command
                 continue;
             }
 
-            $eventDateUtc = phpQuery::newDocument($html)
+            $eventDateUtc = phpQuery::newDocument($topPageHtml)
                 ->find(".group_event_list:eq($index)")
                 ->find('.group_event_inner')
                 ->find('.schedule')
@@ -82,20 +88,20 @@ class LoadYyphpConnpass extends Command
             $eventDateDt = new Carbon($eventDateUtc);
             $eventDateDt->setTimezone('Asia/Tokyo');
 
-            $eventPageUrl = phpQuery::newDocument($html)
+            $eventPageUrl = phpQuery::newDocument($topPageHtml)
             ->find(".group_event_list:eq($index)")
             ->find('.thumb_area')
             ->find('.image_link')
             ->attr('href');
 
-            $title = phpQuery::newDocument($html)
+            $title = phpQuery::newDocument($topPageHtml)
             ->find(".group_event_list:eq($index)")
             ->find('.thumb_area')
             ->find('.image_link')
             ->find('img')
             ->attr("alt");
 
-            $participants = phpQuery::newDocument($html)
+            $participants = phpQuery::newDocument($topPageHtml)
             ->find(".group_event_list:eq($index)")
             ->find('.group_event_inner')
             ->find('.event_participants')
@@ -180,8 +186,8 @@ class LoadYyphpConnpass extends Command
         }
 
         //永続化
-        $this->eventRepo->saveEvents($events);
-        $this->participantRepo->saveParticipants($participants);
+        $this->eventService->saveEvents($events);
+        $this->participantService->saveParticipants($participants);
 
         info('End YYPHP load from Connpass');
     }

@@ -10,14 +10,11 @@ class EventService
 {
 
     protected $eventRepo;
-    protected $participantRepo;
 
     public function __construct(
-        EventRepositoryInterface $eventRepositoryInterface,
-        ParticipantRepositoryInterface $participantRepositoryInterface
+        EventRepositoryInterface $eventRepositoryInterface
     ){
         $this->eventRepo = $eventRepositoryInterface;
-        $this->participantRepo = $participantRepositoryInterface;
 	}
 
 
@@ -46,5 +43,16 @@ class EventService
     public function getEventById($eventId)
     {
         return $this->eventRepo->eventById($eventId);
+    }
+
+    /**
+     * イベント一覧を保存する
+     *
+     * @param [type] $events
+     * @return void
+     */
+    public function saveEvents($events)
+    {
+        $this->eventRepo->saveEvents($events);
     }
 }
